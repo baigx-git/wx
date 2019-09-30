@@ -7,3 +7,7 @@
     inner view
   </view>
 </view>
+<view data-alpha-beta="1" data-alphaBeta="2" bindtap="bindViewTap"> DataSet Test </view>
+<view mark:myMark="last" bindtap="bindViewTap">
+  <button mark:anotherMark="leaf" bindtap="bindButtonTap">按钮</button>
+</view>

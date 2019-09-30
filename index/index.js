@@ -27,5 +27,19 @@ Page({
    handleTap4: function () {
      this.setData({ msg: "handleTap4" })
      console.log(this.data);
+  },
+  bindViewTap: function (event) {
+    console.log(event);
+    event.currentTarget.dataset.alphaBeta === 1 // - 会转为驼峰写法
+    console.log(event.currentTarget.dataset.alphaBeta === "1");
+    event.currentTarget.dataset.alphabeta === 2 // 大写会转为小写
+    console.log(event.currentTarget.dataset.alphabeta === "2");
+  },
+  bindViewTap: function (e) {
+    e.mark.myMark === "last" // true
+    e.mark.anotherMark === "leaf" // true
+    console.log(e.mark.myMark === "last")
+    console.log(e)
   }
+
 })
