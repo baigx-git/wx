@@ -39,8 +39,7 @@ Page({
     e.mark.myMark === "last" // true
     e.mark.anotherMark === "leaf" // true
     console.log(e.mark.myMark === "last")
-    console.log(e)
   }
-  
+
 
 })
