@@ -41,5 +41,6 @@ Page({
     console.log(e.mark.myMark === "last")
     console.log(e)
   }
+  
 
 })
