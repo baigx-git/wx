@@ -1,1 +1,9 @@
 <view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档</view>
+<view>{{ msg }}</view>
+<button bindtap="clickMe">点击我</button>
+<view id="outer" bind:touchstart="handleTap1" capture-bind:touchstart="handleTap2">
+  outer view
+  <view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+    inner view
+  </view>
+</view>
